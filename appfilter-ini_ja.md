@@ -1,102 +1,102 @@
-#�T�v
-Map2Geo�ł͒n�����̓]����A�v���ꗗ�ɂ��āA�s�v�ȃA�v�������O���ĕ\�����邱�Ƃ��ł��܂�(Ver5.01�ȍ~)�B
-��`�t�@�C�� "appfilter.ini" ��p�ӂ��邱�ƂŁA�ꗗ���珜�O����A�v�����w�肷�邱�Ƃ��\�ł��B
+# 概要
+Map2Geoでは地理情報の転送先アプリ一覧について、不要なアプリを除外して表示することができます(Ver5.01以降)。
+定義ファイル "appfilter.ini" を用意することで、一覧から除外するアプリを指定することが可能です。
 
-��Ύg��Ȃ��A�v��������\������Ĕς킵���Ƃ������󋵂����P�ł��܂��B
+絶対使わないアプリが毎回表示されて煩わしいといった状況を改善できます。
 
-#appfilter.ini
-�]����A�v���ꗗ���珜�O����A�v���̒�`�t�@�C���B
-* <�[�������X�g���[�W>/map2geo/appfilter.ini
-* �e�L�X�g�t�@�C��
-* ���s�R�[�h :CR | LF | CRLF
-* �G���R�[�h :UTF-8�𐄏�
+# appfilter.ini
+転送先アプリ一覧から除外するアプリの定義ファイル。
+* <端末内部ストレージ>/map2geo/appfilter.ini
+* テキストファイル
+* 改行コード :CR | LF | CRLF
+* エンコード :UTF-8を推奨
 
-##�t�@�C�����e�̍\��
-* �L�[=�l �̃G���g���̗���ō\�������
-* [�Z�N�V������]�ŃZ�N�V�������`����
-    * �Z�N�V���������d������ꍇ�A����Z�N�V�����Ƃ��Č��������
-* �ŏ��̃Z�N�V�������O�̍s�̓O���[�o���Z�N�V����(�Z�N�V������""(�󕶎���))�ւ̋L�q�Ƃ��Ĉ�����
-* �s���A�s���̃X�y�[�X�A�^�u�͖��������
-* ";"(�Z�~�R����)�Ŏn�܂�s�̓R�����g�s�Ƃ��Ė��������
-    * �s���ȊO�ł̓R�����g�Ƃ݂Ȃ���Ȃ�
+## ファイル内容の構成
+* キー=値 のエントリの羅列で構成される
+* [セクション名]でセクションを定義する
+    * セクション名が重複する場合、同一セクションとして結合される
+* 最初のセクションより前の行はグローバルセクション(セクション名""(空文字列))への記述として扱われる
+* 行頭、行末のスペース、タブは無視される
+* ";"(セミコロン)で始まる行はコメント行として無視される
+    * 行頭以外ではコメントとみなされない
 
 ```
-;�O���[�o���Z�N�V����
-�L�[=�l
+;グローバルセクション
+キー=値
  :
  :
-[�Z�N�V������1]
-;�R�����g
-�L�[=�l
+[セクション名1]
+;コメント
+キー=値
  :
  :
-[�Z�N�V������2]
-;�R�����g
-�L�[=�l
+[セクション名2]
+;コメント
+キー=値
  :
  :
 ```
-##�Z�N�V����
-����3��ނ̃Z�N�V���������p�ł���:
+## セクション
+次の3種類のセクションが利用できる:
 
-| �Z�N�V������ | �K�p�Ώ� |
+| セクション名 | 適用対象 |
 | ---- | ---- |
-|  �O���[�o���Z�N�V���� | �A�v���ꗗ�S�� |
-|  [place] | �ꏊ�̓]����A�v���ꗗ |
-|  [route] | ���[�g�̓]����A�v���ꗗ |
+|  グローバルセクション | アプリ一覧全体 |
+|  [place] | 場所の転送先アプリ一覧 |
+|  [route] | ルートの転送先アプリ一覧 |
 
-##�L�[
-����2��ނ̃L�[�����p�ł���:
+## キー
+次の2種類のキーが利用できる:
 
-| �L�[�� | �p�r |
+| キー名 | 用途 |
 | ---- | ---- |
-|reject|�l�ɋL�q���ꂽ�p�b�P�[�W���̃A�v�����\���ɂ���|
-|accept|�l�ɋL�q���ꂽ�p�b�P�[�W���̃A�v����\������|
+|reject|値に記述されたパッケージ名のアプリを非表示にする|
+|accept|値に記述されたパッケージ名のアプリを表示する|
 
-##�l
-�l�ɂ̓A�v���̃p�b�P�[�W�����L�q����B
-���C���h�J�[�h�ɂ��L�q���\�B
+## 値
+値にはアプリのパッケージ名を記述する。
+ワイルドカードによる記述が可能。
 
-|���C���h�J�[�h|�Ӗ�|
+|ワイルドカード|意味|
 |----|----|
-|*(�A�X�^���X�N)|�C�Ӓ��̔C�ӕ�����(�󕶎�������v)|
-|?|1����|
-�����K�\���ł͂���܂���
+|*(アスタリスク)|任意長の任意文字列(空文字列も合致)|
+|?|1文字|
+※正規表現ではありません
 
-#�\������̃��[��
-* �\�����A�v�����ɕ\��/��\���̔��肪�s����
-* �G���g���̏ォ�珇�ɔ��肳���
-* ���v����G���g��������΂����ł��̃A�v���̔�����I������
-* �ǂ̃G���g���ɂ����v���Ȃ������A�v���͕\���Ɣ��肳���
-* [place] �܂��� [route] �Z�N�V��������ɔ��肳��A���̌��ʂɑ΂��Ă���ɃO���[�o���Z�N�V���������肳���
+# 表示判定のルール
+* 表示候補アプリ毎に表示/非表示の判定が行われる
+* エントリの上から順に判定される
+* 合致するエントリがあればそこでそのアプリの判定を終了する
+* どのエントリにも合致しなかったアプリは表示と判定される
+* [place] または [route] セクションが先に判定され、その結果に対してさらにグローバルセクションが判定される
 
-#��
+# 例
 ```
-;Google���ȊO�̃A�v�����\���ɂ���
+;Google製以外のアプリを非表示にする
 accept=com.google.*
 reject=*
 ```
 
 ```
-;�ꏊ���J���A�v���ɂ�Google�}�b�v��Waze������\������
+;場所を開くアプリにはGoogleマップとWazeだけを表示する
 [place]
 accept=com.google.android.apps.maps
 accept=com.waze
 reject=*
 ```
 
-��L�̓��e���e�L�X�g�t�@�C���ɃR�s�y���āA<�[�������X�g���[�W>/map2geo/appfilter.ini �Ƃ��Ēu�����ƂŎ������Ƃ��ł���B
+上記の内容をテキストファイルにコピペして、<端末内部ストレージ>/map2geo/appfilter.ini として置くことで試すことができる。
 
-#�A�v���̃p�b�P�[�W���̒��ו�
-##Map2Geo�Œ��ׂ�
-�A�v���̃V���[�g�J�b�g�쐬���̃^�C�g���ҏW��ʂŃA�v���̃A�C�R�����^�b�v���邱�ƂŁA���̃A�v���̃p�b�P�[�W�����\�������B
+# アプリのパッケージ名の調べ方
+## Map2Geoで調べる
+アプリのショートカット作成時のタイトル編集画面でアプリのアイコンをタップすることで、そのアプリのパッケージ名が表示される。
 
-##GooglePlay��URL���璲�ׂ�
-�u���E�U�ł�GooglePlay�őΏۃA�v���̃y�[�W���J���AURL���炻�̃p�b�P�[�W����m�邱�Ƃ��ł���B
-URL����id�p�����[�^���p�b�P�[�W���B
+## GooglePlayのURLから調べる
+ブラウザ版のGooglePlayで対象アプリのページを開き、URLからそのパッケージ名を知ることができる。
+URL内のidパラメータがパッケージ名。
 
-Map2Geo�ł����URL��
+Map2GeoであればURLは
 `https://play.google.com/store/apps/details?id=catfish.android.map2geo`
-�ƂȂ��Ă���A�p�b�P�[�W��
+となっており、パッケージ名
 `catfish.android.map2geo`
-�𓾂邱�Ƃ��ł���B
+を得ることができる。

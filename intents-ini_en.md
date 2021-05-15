@@ -1,15 +1,15 @@
-#Overview
+# Overview
 With Map2Geo, you can define your own format for the transmission intent of geographic information (Ver 4.00 or later).
 With the definition file "intents.ini", it is possible to add its original support to applications other than the transmission target that Map2Geo supports as standard.
 
-#intents.ini
+# intents.ini
 User's own additional format definition file.
 * ＜Internal shared storage＞/map2geo/intents.ini
 * Text file
 * Line feed code :CR | LF | CRLF
 * Encoding :UTF-8 is recommended
 
-##Structure of file contents
+## Structure of file contents
 * It consists of a list of entries of key = value.
 * Divide the definition of each application by [section name].
 * Spaces and tabs at the beginning and end of a line are ignored.
@@ -35,7 +35,7 @@ key=value
 * The key is a predefined string (see below).
 * The value is an any string.
 
-##Example
+## Example
 ```
 [0]
 ;Activate Google Maps with always zoom level 20 and place name as "Example".
@@ -44,7 +44,7 @@ package=com.google.android.apps.maps
 ```
 You can try this by copying to a text file and placing it as ＜Internal shared storage＞/map2geo/intents.ini.
 
-#Process of file parse
+# Process of file parse
 Parsed by the following rule:
 * Parsed in the order of appearance of sections.
 * The presence of an application that accepts the URI described in the "data" entry for each section is checked, and if it exists, it is regarded as an transmission target application..
@@ -56,7 +56,7 @@ Parsed by the following rule:
 * Map2Geo standard target application definition is parsed after this intents.ini parsing.
     * This means that you can override the standard behavior with this file.
 
-#Key
+# Key
 * Capital and lowercase letters are distinguished.
 * Do not put spaces between Key, =, Value.
 * Do not enclose the value with double quotes.
@@ -72,45 +72,45 @@ The list of keys is as follows:
 |iconactivity|Activity name of app with icon and label to display as destination|Empty string|com.google.android.maps.driveabout.app.DestinationActivity|
 |action|Intent's action string|android.intent.action.VIEW|android.intent.action.SEND|
 
-##data
+## data
 * Applying coordinate values etc. to the URI template defined here is sent to the destination application.
 * Also, based on this value, applications that can be transmitted are searched.
     * If package is specified, it will be given priority.
 
 The syntax details are described below.
 
-##package
+## package
 * To specify the transmission target application, specify the package name with this entry.
 * In the absence of this entry, applications responding to URI based on data (or identifier) are listed as transmission targets.
 
-##class
+## class
 * To specify the activity of the application to be sent, specify the class name of the activity in this entry.
 * Ignored if no package is specified.
 
-##identifier
+## identifier
 * Template of URI used for searching transmission target applications.
 * Used when want to search target application with URI different from the actually transmitted data.
     * Specifically, it is used when data transmission is performed with android.intent.action.SEND (= transmission data is not URI).
 
-##iconactivity
+## iconactivity
 * Used when want to use icon and label of specific activity  as a destination list icon. 
     * The activity must be included in the package of the destination application.
     * If activity does not exist, default icon and label are used.
 
-##action
+## action
 * Specify this when want to apply intent actions other than standard (android.intent.action.VIEW).
     * Specifically, it is used when data transmission is performed with android.intent.action.SEND (text transmission).
 
-#URI Template Syntax
+# URI Template Syntax
 The syntax of the data, identifier entry of intents.ini is as follows:
 
-##Basic syntax
+## Basic syntax
 * It consists of concatenation of strings, values, conditional phrases.
 * Conditional phrases can be nested.
 * It must be completed in one line. Can not divide into multiple lines.
     * However, since {\ n} will be replaced by a line feed, it is possible to obtain multiline format results.
 
-##Element
+## Element
 The elements of the template are as follows:
 
 |Element|Use|
@@ -135,7 +135,7 @@ geo:{lat},{lng}[zoom:&z={zoom}]
 |{zoom}  |Value(Zoom level)|
 |]       |End of conditional phrase|
 
-##Value
+## Value
 The list of values is as follows:
 
 |Value|Meaning|Remarks|
@@ -158,7 +158,7 @@ The list of values is as follows:
 |{rawlabel}|Place name(Not encoded)|Empty string is applied when the place name does not exist in the geographic information|
 |{\n}      |Line feed| |
 
-##Conditional phrase
+## Conditional phrase
 Substring that begins with "[Condition:" or "[Condition!" and ends with"]".
 Do not put spaces between "[", Condition, ":" "!".
 
@@ -185,7 +185,7 @@ The list of conditions is as follows:
 |version<Integer|Version code of the destination application is smaller than an integer value.|
 |version>Integer|Version code of the destination application is larger than an integer value.|
 
-##Example
+## Example
 ```
 geo:{lat},{lng}
 ```
@@ -205,12 +205,12 @@ geo:{lat},{lng}[label:?q={lat},{lng}({label})[zoom:&z={zoom}]][label![zoom:?z={z
  >    `geo:35.660411,139.729265?q=35.660411,139.729265(google)&z=18.0` 
  >    `geo:35.660411,139.729265?z=18.0` 
 
-#Remarks
+# Remarks
 Route transfer feature of Map2Geo can not be handled with this definition file.
 This definition file is not referred to in route transfer processing.
 
-#Tips
-##Standard geo URI format transmitted by Map2Geo
+# Tips
+## Standard geo URI format transmitted by Map2Geo
 It is as follows (at Ver4.00):
 ```
 geo:{lat},{lng}[?z={zoomint}]
@@ -218,10 +218,10 @@ geo:{lat},{lng}[?z={zoomint}]
 * "z = ..." is not given in Ver3.12 and below.
 * It may be changed depending on the transmission destination application.
 
-##Issuing intents other than geo intent
+## Issuing intents other than geo intent
 Intent that can be issued is not limited to geo intent.
 
-###Launch browser
+### Launch browser
 For example, Google Maps for the browser opens with the following definition:
 ```
 data=https://www.google.com/maps/@{lat},{lng},{zoom}z
@@ -229,7 +229,7 @@ data=https://www.google.com/maps/@{lat},{lng},{zoom}z
 You can try this by making this line a text file and putting it as ＜Internal shared storage＞/map2geo/intents.ini.
 Section description is not required (parsed as a section of the empty name).
 
-###Share text
+### Share text
 By specifying action=android.intent.action.SEND it is also possible to transfer text to memo apps etc.
 
 In the case of action=android.intent.action.SEND, Map2Geo packs the string generated by data into Extra of Intent.EXTRA_TEXT, and sends it by generating an intent with type="text/plain".

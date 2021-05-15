@@ -8,7 +8,7 @@ You can improve situations that cause inconvenience as apps that are never used 
 Definition file of the app to be excluded from the transfer destination app list.
 * ＜Internal shared storage＞/map2geo/appfilter.ini
 * Text file
-* Line feed code: CR | LF | CRLF
+* Line feed code: CR \| LF \| CRLF
 * Encoding: UTF-8 is recommended
 
 ## Structure of file contents

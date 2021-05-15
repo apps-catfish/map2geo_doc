@@ -6,7 +6,7 @@ With the definition file "intents.ini", it is possible to add its original suppo
 User's own additional format definition file.
 * ＜Internal shared storage＞/map2geo/intents.ini
 * Text file
-* Line feed code :CR | LF | CRLF
+* Line feed code :CR \| LF \| CRLF
 * Encoding :UTF-8 is recommended
 
 ## Structure of file contents

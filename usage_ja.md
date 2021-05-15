@@ -107,10 +107,10 @@ https://play.google.com/store/apps/details?id=catfish.android.map2geo.urlinjecto
 ![][injector01]
 
 
-[icon]:/images/ic_launcher.png
-[icon_injector]:/images/map2geo_urlinjector.png
+[icon]:images/ic_launcher.png
+[icon_injector]:images/map2geo_urlinjector.png
 
-[whats]:/images/whats.png
+[whats]:images/whats.png
 
 [basis01]:/images/basis01.png
 [basis02]:/images/basis02.png

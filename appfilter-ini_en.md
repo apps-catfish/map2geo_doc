@@ -1,17 +1,17 @@
-#Overview
+# Overview
 In Map2Geo, you can display a list of apps to which geographic information is transferred except for unnecessary apps (Ver5.01 or later).
 With the definition file "appfilter.ini", it is possible to specify the apps to exclude from the list.
 
 You can improve situations that cause inconvenience as apps that are never used are displayed every time.
 
-#appfilter.ini
+# appfilter.ini
 Definition file of the app to be excluded from the transfer destination app list.
 * ＜Internal shared storage＞/map2geo/appfilter.ini
 * Text file
 * Line feed code: CR | LF | CRLF
 * Encoding: UTF-8 is recommended
 
-##Structure of file contents
+## Structure of file contents
 * It consists of a list of entries of key = value.
 * Define a section with [section name].
     * If the section names overlap, they are combined as the same section.
@@ -36,7 +36,7 @@ key=value
  :
  :
 ```
-##Section
+## Section
 The following three kinds of sections are available:
 
 | Section name | Applicable target |
@@ -45,7 +45,7 @@ The following three kinds of sections are available:
 | [place] | Place transfer destination app list |
 | [route] | Route transfer destination app list |
 
-##Key
+## Key
 The following two kinds of keys are available:
 
 | Key name | Use |
@@ -53,7 +53,7 @@ The following two kinds of keys are available:
 | reject | Hide app with package name described in value |
 | accept | Display app with package name described in value |
 
-##Value
+## Value
 In the value, describe the package name of the app.
 Wildcard description is possible.
 
@@ -70,7 +70,7 @@ Wildcard description is possible.
 * Apps that did not match any entry are determined to be displayed.
 * The [place] or [route] section is judged first and the global section is further judged for the result.
 
-#Example
+# Example
 ```
 ;Hide non-google apps
 accept=com.google.*
@@ -87,11 +87,11 @@ reject=*
 
 You can try this by copying it to a text file and placing it as ＜Internal shared storage＞/map2geo/appfilter.ini.
 
-#How to find the package name of the app
-##With Map2Geo
+# How to find the package name of the app
+## With Map2Geo
 By tapping the icon of the app on the title editing screen at creating the shortcut of the app, the package name of the app is displayed.
 
-##Fom the GooglePlay URL
+## From the GooglePlay URL
 Open the pages of the target app in GooglePlay of the browser version, it is possible to know the package name from the URL.
 The id parameter in the URL is the package name.
 

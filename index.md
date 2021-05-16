@@ -1,4 +1,4 @@
-# map2geo
+# Map2Geo ドキュメント 目次
 
 * [Map2Geo 使い方](./usage_ja.md)
 * [intents.ini 仕様](./intents-ini_ja.md)

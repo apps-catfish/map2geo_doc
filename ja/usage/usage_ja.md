@@ -1,5 +1,6 @@
 ---
-title: Map2Geo 使い方
+layout: page
+title: "Map2Geo 使い方"
 ---
 
 # これはなに

@@ -70,6 +70,7 @@ package=com.google.android.apps.maps
 |identifier|送信先の存在確認用URIテンプレート|空文字列|google.navigation:?ll={lat},{lng}|
 |iconactivity|送信先として表示するアイコン、ラベルを持つアプリのアクティビティ名|空文字列|com.google.android.maps.driveabout.app.DestinationActivity|
 |action|インテントのアクション文字列|android.intent.action.VIEW|android.intent.action.SEND|
+|label|送信先アプリの表示名|アプリ名|Google Maps on Web|
 
 ## data
 * ここで定義されたURIテンプレートに座標値などを当てはめたものが送信先アプリに送られる
@@ -99,6 +100,10 @@ package=com.google.android.apps.maps
 ## action
 * インテントのアクションを標準(android.intent.action.VIEW)以外にしたい場合に指定する
     * 具体的には、データ送信をandroid.intent.action.SEND(テキストの送信)で行う場合に利用する
+## label
+* 送信先アプリの表示名を指定する
+    * labelが異なる送信先は同一アプリでも別の転送先とみなされる
+    * 例えばChromeでWebページを開くような送信先を複数設けたい場合には、それぞれに別のlabelを与えることで実現できる
 
 # URIテンプレートの構文
 intents.ini の data,identifierエントリの構文は次の通り:

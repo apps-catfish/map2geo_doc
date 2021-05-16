@@ -71,6 +71,7 @@ The list of keys is as follows:
 |identifier|URI template for existence confirmation of destination|Empty string|google.navigation:?ll={lat},{lng}|
 |iconactivity|Activity name of app with icon and label to display as destination|Empty string|com.google.android.maps.driveabout.app.DestinationActivity|
 |action|Intent's action string|android.intent.action.VIEW|android.intent.action.SEND|
+|label|Display name of the destination app|App Name|Google Maps on Web|
 
 ## data
 * Applying coordinate values etc. to the URI template defined here is sent to the destination application.
@@ -100,6 +101,11 @@ The syntax details are described below.
 ## action
 * Specify this when want to apply intent actions other than standard (android.intent.action.VIEW).
     * Specifically, it is used when data transmission is performed with android.intent.action.SEND (text transmission).
+
+## label
+* Specify the display name of the destination app.
+    * The destination with a different label is regarded as a different destination even if it is the same app.
+    * For example, if you want to set up multiple destinations such as opening a web page in Chrome, you can do so by giving each a different label.
 
 # URI Template Syntax
 The syntax of the data, identifier entry of intents.ini is as follows:

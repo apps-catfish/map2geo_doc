@@ -1,3 +1,4 @@
+<!--
 # 概要
 Map2Geoでは地理情報の送信インテントについて、ユーザー独自のフォーマットを定義できます(Ver4.00以降)。
 定義ファイル "intents.ini" を用意することで、Map2Geoが標準でサポートしている送信対象アプリ以外に対して独自にサポートを追加することが可能となります。
@@ -251,4 +252,4 @@ action=android.intent.action.SEND
 
 ただしこの例だとすべてのandroid.intent.action.SEND対応アプリがリストアップされ、以降のandroid.intent.action.SENDを使用するセクションがマスクされてしまう。
 `package=com.google.android.gm `のように追記して特定のアプリを指定することが望ましい。
-
+-->

@@ -1,51 +1,61 @@
 # What is this
 This is an app to transfer the place selected on the map app such as Google Maps to other apps.
 Transfer is done via Android's "Sharing" function.
+
 ![][whats]
 
 # Basic usage
 Select the place you want to transfer on the map app
+
 ![][basis01]
 
 ----
 
 Perform sharing
+
 ![][basis02]
 
 ----
 
 Select this app as sharing destination
+
 ![][basis03]
 
 ----
 
 A list of transfer target apps will be displayed
+
 ![][basis04]
 
 ----
 
 The place will be transferred to the selected app
+
 ![][basis05]
 
 # Route transfering
 Routes created by Google Maps etc. can also be transferred.
 
 Perform route sharing
+
 ![][route01]
 
 ----
 
 Select this app as sharing destination
+
 ![][route02]
 
 ----
 
 A list of transfer target apps will be displayed
+
 ![][route03]
 
 ----
 
 The route will be transferred to the selected app
+
 ![][route04]
 
 ## Points to note about route transfer
@@ -61,6 +71,7 @@ Conditions such as transportation and toll road availability are not transferred
 
 # Create Shortcut
 You can create a shortcut on the Home screen to open the place / route with the map app.
+
 ![][shortcut01]![][shortcut02]
 
 ## Place shortcut
@@ -73,10 +84,12 @@ Create it with the following procedure:
 
 ## Route shortcut
 Route shortcuts can be created in the same procedure as the place.
+
 ![][shortcut04]
 
 ## Shortcut to open the app selection screen
 By long tapping the Map2Geo icon on the app selection screen, you can create shortcut for open the app selection screen.
+
 ![][shortcut05]
 
 ![][shortcut06]
@@ -93,6 +106,7 @@ When creating shortcut of "Route including current location" transferred from th
 
 # Display location / route information
 By short tapping the Map2Geo icon on the app selection screen, information on the place / route point will be displayed.
+
 ![][placeinfo01]
 
 Tap an item to switch the display format of coordinates.
@@ -104,6 +118,7 @@ If Map2Geo URL injector is installed, any Map2Geo supported map app can be launc
 https://play.google.com/store/apps/details?id=catfish.android.map2geo.urlinjector
 
 When opening a link to a map displayed on a browser etc., if the URL injector supports it, can acquire the coordinates and transfer it to the map app.
+
 ![][injector01]
 
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Map2Geo 使い方
 ---
 

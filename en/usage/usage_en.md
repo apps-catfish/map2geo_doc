@@ -122,29 +122,29 @@ When opening a link to a map displayed on a browser etc., if the URL injector su
 ![][injector01]
 
 
-[icon]:/site/appscatfish/android/map2geo/usage_en/ic_launcher.png
-[icon_injector]:/site/appscatfish/android/map2geo/usage_en/map2geo_urlinjector.png
+[icon]:./images/ic_launcher.png
+[icon_injector]:./images/map2geo_urlinjector.png
 
-[whats]:/site/appscatfish/android/map2geo/usage_en/whats.png
+[whats]:./images/whats.png
 
-[basis01]:/site/appscatfish/android/map2geo/usage_en/basis01.png
-[basis02]:/site/appscatfish/android/map2geo/usage_en/basis02.png
-[basis03]:/site/appscatfish/android/map2geo/usage_en/basis03.png
-[basis04]:/site/appscatfish/android/map2geo/usage_en/basis04.png
-[basis05]:/site/appscatfish/android/map2geo/usage_en/basis05.png
+[basis01]:./images/basis01.png
+[basis02]:./images/basis02.png
+[basis03]:./images/basis03.png
+[basis04]:./images/basis04.png
+[basis05]:./images/basis05.png
 
-[route01]:/site/appscatfish/android/map2geo/usage_en/route01.png
-[route02]:/site/appscatfish/android/map2geo/usage_en/route02.png
-[route03]:/site/appscatfish/android/map2geo/usage_en/route03.png
-[route04]:/site/appscatfish/android/map2geo/usage_en/route04.png
+[route01]:./images/route01.png
+[route02]:./images/route02.png
+[route03]:./images/route03.png
+[route04]:./images/route04.png
 
-[shortcut01]:/site/appscatfish/android/map2geo/usage_en/shortcut01.png
-[shortcut02]:/site/appscatfish/android/map2geo/usage_en/shortcut02.png
-[shortcut03]:/site/appscatfish/android/map2geo/usage_en/shortcut03.png
-[shortcut04]:/site/appscatfish/android/map2geo/usage_en/shortcut04.png
-[shortcut05]:/site/appscatfish/android/map2geo/usage_en/shortcut05.png
-[shortcut06]:/site/appscatfish/android/map2geo/usage_en/shortcut06.png
+[shortcut01]:./images/shortcut01.png
+[shortcut02]:./images/shortcut02.png
+[shortcut03]:./images/shortcut03.png
+[shortcut04]:./images/shortcut04.png
+[shortcut05]:./images/shortcut05.png
+[shortcut06]:./images/shortcut06.png
 
-[placeinfo01]:/site/appscatfish/android/map2geo/usage_en/placeinfo01.png
+[placeinfo01]:./images/placeinfo01.png
 
-[injector01]:/site/appscatfish/android/map2geo/usage_en/injector01.png
+[injector01]:./images/injector01.png

@@ -11,7 +11,7 @@ div.wrapper {max-width:960px;margin-left:5%;}
 div.post-content > p {width:65%;max-width:640;}
 table,hr,p,div.highlight {width:65%;max-width:640;}
 @include media-query($on-palm) {
-    div.post-content > #markdown-toc {float:none;width:auto;max-width:auto;margin-top:0;}
+    div.post-content > #markdown-toc {float:none;width:auto;max-width:initial;max-width:auto;margin-top:0;}
     div.post-content > #markdown-toc {list-style:none;padding-left:0;margin-left:0;}
     div.wrapper {max-width:webkit-calc(800px - (30px * 2));margin-left:auto;}
     div.post-content > p {width:auto;max-width:initial;max-width:auto;}

@@ -7,6 +7,6 @@ defaults:
   -
     scope:
       path: ""
-      type: ""
+      type: "pages"
     values:
       author: "CatFish"

@@ -11,6 +11,11 @@ div.wrapper {max-width:960px;margin-left:5%;}
 div.post-content > p {width:65%;max-width:640;}
 table,hr,p,div.highlight {width:65%;max-width:640;}
 
+//for indent contents
+p {
+    margin-left:8px;
+}
+
 //for h tag
 .post-content {
     margin-bottom: $spacing-unit;

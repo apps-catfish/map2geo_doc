@@ -1,3 +1,13 @@
+---
+layout: default
+title: "appfilter.ini 仕様"
+---
+
+* Table of contents
+{:toc}
+
+----
+
 # 概要
 Map2Geoでは地理情報の転送先アプリ一覧について、不要なアプリを除外して表示することができます(Ver5.01以降)。
 定義ファイル "appfilter.ini" を用意することで、一覧から除外するアプリを指定することが可能です。

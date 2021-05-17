@@ -235,6 +235,8 @@
     @include media-query($on-laptop) {
       @include relative-font-size(2);
     }
+
+    border-bottom: solid 2px #555;
   }
 
   h2 {

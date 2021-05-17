@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_toc
 title: "外部デコーダー 仕様"
 ---
 

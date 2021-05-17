@@ -1,3 +1,13 @@
+---
+layout: default
+title: "Map2Geo usage"
+---
+
+* Table of contents
+{:toc}
+
+----
+
 # What is this
 This is an app to transfer the place selected on the map app such as Google Maps to other apps.
 Transfer is done via Android's "Sharing" function.

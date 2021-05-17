@@ -1,3 +1,13 @@
+---
+layout: default
+title: "intents.ini reference"
+---
+
+* Table of contents
+{:toc}
+
+----
+
 # Overview
 With Map2Geo, you can define your own format for the transmission intent of geographic information (Ver 4.00 or later).
 With the definition file "intents.ini", it is possible to add its original support to applications other than the transmission target that Map2Geo supports as standard.

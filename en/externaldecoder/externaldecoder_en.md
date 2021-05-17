@@ -1,3 +1,13 @@
+---
+layout: default
+title: "External decoder reference"
+---
+
+* Table of contents
+{:toc}
+
+----
+
 # Overview
 For Map2Geo Ver 6.00 or later, users can program their own coordinates analysis process when sharing from map app etc. to Map2Geo.
 

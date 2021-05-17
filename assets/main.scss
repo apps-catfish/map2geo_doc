@@ -9,3 +9,5 @@ div.post-content > #markdown-toc {list-style:none;padding-left:0;margin-left:0;}
 div.wrapper {max-width:960px;margin-left:5%;}
 div.post-content > p {width:65%;max-width:640;}
 table,hr,p,div.highlight {width:65%;max-width:640;}
+
+input ~ .trigger {clear: both;display: block;}

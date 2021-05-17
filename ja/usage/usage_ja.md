@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Map2Geo 使い方"
 ---
 

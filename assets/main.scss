@@ -9,13 +9,13 @@ div.post-content > #markdown-toc {float:right;width:30%;max-width:320px;margin-t
 div.post-content > #markdown-toc {list-style:none;padding-left:0;margin-left:0;}
 div.wrapper {max-width:960px;margin-left:5%;}
 div.post-content > p {width:65%;max-width:800px;}
-table,hr,p,div.highlight,li,ul {width:65%;max-width:800px;}
+div.post-content > table,hr,p,div.highlight,li,ul {width:65%;max-width:800px;}
 @include media-query($on-palm) {
     div.post-content > #markdown-toc {float:none;width:auto;max-width:initial;max-width:auto;margin-top:0;}
     div.post-content > #markdown-toc {list-style:none;padding-left:0;margin-left:0;}
     div.wrapper {max-width:webkit-calc(800px - (30px * 2));margin-left:auto;}
     div.post-content > p {width:auto;max-width:initial;max-width:auto;}
-    table,hr,p,div.highlight,li,ul {width:auto;max-width:initial;max-width:auto;}
+    div.post-content > table,hr,p,div.highlight,li,ul {width:auto;max-width:initial;max-width:auto;}
 }
 
 //for indent contents

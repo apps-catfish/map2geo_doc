@@ -3,10 +3,5 @@ titles_from_headings:
   strip_title: true
   collections: true
 
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      author: "CatFish"
+author: "CatFish"
+email: "apps.catfish@gmail.com"

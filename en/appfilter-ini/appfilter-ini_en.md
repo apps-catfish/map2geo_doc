@@ -71,6 +71,7 @@ Wildcard description is possible.
 | ---- | ---- |
 | * (Asterisk) | Any length any character string (empty string also matches) |
 |? | 1 character |
+
 ※ It is not a regular expression
 
 # Display judgment rules

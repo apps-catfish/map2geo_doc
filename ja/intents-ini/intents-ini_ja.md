@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "intents.ini 仕様"

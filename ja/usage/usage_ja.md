@@ -3,7 +3,8 @@ layout: page
 title: "Map2Geo 使い方"
 ---
 
-* Table Of Contents {:toc}.
+* 目次
+{:toc}
 
 # これはなに
 Googleマップなどの地図アプリ上で指定した場所を他のアプリに転送するためのアプリです。

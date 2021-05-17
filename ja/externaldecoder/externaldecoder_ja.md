@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "外部デコーダー 仕様"
 ---
 

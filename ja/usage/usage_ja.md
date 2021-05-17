@@ -3,6 +3,8 @@ layout: page
 title: "Map2Geo 使い方"
 ---
 
+* Table Of Contents {:toc}.
+
 # これはなに
 Googleマップなどの地図アプリ上で指定した場所を他のアプリに転送するためのアプリです。
 アンドロイドの「共有」機能を介して転送を行います。

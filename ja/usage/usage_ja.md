@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: post
 title: "Map2Geo 使い方"
 ---
 
-* 目次
+* Table of contents
 {:toc}
 
 ----

@@ -1,3 +1,4 @@
+markdown: kramdown
 titles_from_headings:
   enabled:     true
   strip_title: false

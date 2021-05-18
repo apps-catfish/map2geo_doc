@@ -42,7 +42,7 @@ p {
   
       border-left: solid 4px #555;
       padding-left: 8px;
-      margin-top:8px;
+      margin-top:$base-line-height;
     }
   
     h2 {
@@ -73,7 +73,7 @@ p {
 //for Nav button
 .site-nav {
     z-index:1;
-    
+
     float: right;
     line-height: $base-line-height * $base-font-size * 2.25;
   

@@ -18,7 +18,7 @@
 
         <div class="trigger">
           {{"index.md" | relative_url}}
-          {%- capture my_include -%}{%- include index.md -%}{%- endcapture -%}
+          {%- capture my_include -%}{%- include_relative index.md -%}{%- endcapture -%}
           {{ my_include | markdownify }}
 
           {%- for path in page_paths -%}

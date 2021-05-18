@@ -10,14 +10,16 @@ $on-palm:          640px !default;
 $on-laptop:        800px !default;
 
 //for Sidebar TOC
+.wrapper {max-width: 1140px;}
+
 div.toc {float:right;width:30%;max-width:320px;margin-top:-100px;}
 div.toc {list-style:none;padding-left:0;margin-left:0;}
-div.post-content {width:68%;max-width:800px;margin-left:0;}
+div.post-content {width:68%;max-width:820px;margin-left:0;}
 
 @include media-query($on-palm) {
     div.toc {float:none;width:auto;max-width:initial;max-width:auto;margin-top:0;}
     div.toc {list-style:none;padding-left:0;margin-left:0;}
-    div.post-content {width:auto;max-width:800px;margin-left:0;}
+    div.post-content {width:auto;max-width:820px;margin-left:0;}
   }
 
 //for indent contents

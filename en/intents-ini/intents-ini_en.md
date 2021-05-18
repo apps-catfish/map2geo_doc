@@ -1,12 +1,7 @@
 ---
-layout: page
+layout: page_toc
 title: "intents.ini reference"
 ---
-
-* Table of contents
-{:toc}
-
-----
 
 # Overview
 With Map2Geo, you can define your own format for the transmission intent of geographic information (Ver 4.00 or later).

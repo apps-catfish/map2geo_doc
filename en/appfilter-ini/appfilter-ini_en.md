@@ -1,12 +1,7 @@
 ---
-layout: page
+layout: page_toc
 title: "appfilter.ini reference"
 ---
-
-* Table of contents
-{:toc}
-
-----
 
 # Overview
 In Map2Geo, you can display a list of apps to which geographic information is transferred except for unnecessary apps (Ver5.01 or later).

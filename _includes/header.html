@@ -17,7 +17,7 @@
         </label>
 
         <div class="trigger">
-          {{index.md" | relative_url}}
+          {{"index.md" | relative_url}}
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}

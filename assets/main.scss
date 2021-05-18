@@ -14,13 +14,13 @@ $on-laptop:        800px !default;
 
 div.toc {float:right;width:30%;max-width:300px;margin-top:-100px;}
 div.toc {list-style:none;padding-left:0;margin-left:0;}
-div.toc {position:fixed;left:70%;overflow-y: scroll;}
+div.toc {position:fixed;left:70%;max-height:100%;overflow-y: scroll;}
 div.post-content {width:68%;max-width:820px;margin-left:0;}
 
 @include media-query($on-palm) {
     div.toc {float:none;width:auto;max-width:initial;max-width:auto;margin-top:0;}
     div.toc {list-style:none;padding-left:0;margin-left:0;}
-    div.toc {position:initial;left:initial;overflow-y: initial;}
+    div.toc {position:initial;left:initial;max-height:initial;overflow-y: initial;}
     div.post-content {width:auto;max-width:820px;margin-left:0;}
   }
 

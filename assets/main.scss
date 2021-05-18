@@ -4,6 +4,11 @@
 
 @import "minima";
 
+$content-width:    960px !default;
+
+$on-palm:          640px !default;
+$on-laptop:        800px !default;
+
 //for Sidebar TOC
 div.toc {float:right;width:30%;max-width:320px;margin-top:-100px;}
 div.toc {list-style:none;padding-left:0;margin-left:0;}

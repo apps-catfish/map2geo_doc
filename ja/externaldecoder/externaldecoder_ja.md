@@ -3,11 +3,6 @@ layout: page_toc
 title: "外部デコーダー 仕様"
 ---
 
-* Table of contents
-{:toc}
-
-----
-
 # 概要
 Map2Geo Ver6.00以降では、マップアプリ等からMap2Geoへ共有を行った際の座標の解析処理をユーザーが独自にプログラムできるようになっています。
 

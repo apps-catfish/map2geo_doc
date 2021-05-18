@@ -1,12 +1,7 @@
 ---
-layout: page
+layout: page_toc
 title: "intents.ini 仕様"
 ---
-
-* Table of contents
-{:toc}
-
-----
 
 # 概要
 Map2Geoでは地理情報の送信インテントについて、ユーザー独自のフォーマットを定義できます(Ver4.00以降)。

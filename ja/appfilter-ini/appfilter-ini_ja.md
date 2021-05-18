@@ -1,12 +1,7 @@
 ---
-layout: page
+layout: page_toc
 title: "appfilter.ini 仕様"
 ---
-
-* Table of contents
-{:toc}
-
-----
 
 # 概要
 Map2Geoでは地理情報の転送先アプリ一覧について、不要なアプリを除外して表示することができます(Ver5.01以降)。

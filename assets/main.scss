@@ -48,6 +48,11 @@ p {
   height: 85px;
 }
 
+body {
+  padding: 85px 0 0;  // padding-top equal to masthead height or greater
+  color: #494e52;
+}
+
 //for h tag
 .post-content {
     margin-bottom: $spacing-unit;

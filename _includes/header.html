@@ -17,16 +17,15 @@
         </label>
 
         <div class="trigger">
-          {{"index.md" | relative_url}}
-          {%- capture my_include -%}{%- include_relative index.md -%}{%- endcapture -%}
+          {%- capture my_include -%}{%- include index.md -%}{%- endcapture -%}
           {{ my_include | markdownify }}
 
-          {%- for path in page_paths -%}
+          <!-- {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
-          {%- endfor -%}
+          {%- endfor -%} -->
         </div>
       </nav>
     {%- endif -%}

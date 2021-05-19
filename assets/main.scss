@@ -123,7 +123,7 @@ body {
       background-color: darken($background-color, 5%);
       border: 2px solid darken($grey-color-light, 5%);
       border-radius: 5px;
-      // text-align: right;
+      text-align: initial;
   
       label[for="nav-trigger"] {
         display: block;

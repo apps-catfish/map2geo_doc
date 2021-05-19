@@ -37,7 +37,9 @@ p {
   // Positioning context for the mobile navigation icon
   position: fixed;
   top: 0;
+  z-index: 2;
   width: 100%;
+  background: white;  // set a color to hide content that may appear below masthead
   height: $spacing-unit * 1.865;
 }
 

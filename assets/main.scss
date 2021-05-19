@@ -45,11 +45,11 @@ p {
   z-index: 20;
   width: 100%;
   background: white;  // set a color to hide content that may appear below masthead
-  height: 85px;
+  height: $spacing-unit * 1.865;
 }
 
 body {
-  padding: 85px 0 0;  // padding-top equal to masthead height or greater
+  padding: $spacing-unit * 1.865 0 0;  // padding-top equal to masthead height or greater
   color: #494e52;
 }
 
